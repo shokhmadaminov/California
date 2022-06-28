@@ -1,0 +1,23 @@
+.header {
+    padding: 3rem 0;
+    &__inner {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        display: flex;
+    }
+    &__logo-img {
+        width: 170px;
+        height: 21px;
+        object-fit: contain;
+        display: block;
+    }
+    &__btn-wrapper {
+        display: flex;
+        align-items:center;
+        gap: 2rem;
+    }
+}

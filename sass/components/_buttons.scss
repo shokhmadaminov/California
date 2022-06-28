@@ -1,0 +1,22 @@
+%button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.search-btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain
+    }
+}
+.cart-btn {
+    @extend %button;
+    img {
+        width: 24px;
+        height: 24px;
+        object-fit: contain
+    }
+}
