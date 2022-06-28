@@ -20,3 +20,15 @@
         object-fit: contain
     }
 }
+
+.burger {
+    @include responsive(tables) {
+        display: block;
+    }
+    @extend %button;
+    display: none;
+    img {
+        width: 30px;
+        height: 30px;
+    }
+}

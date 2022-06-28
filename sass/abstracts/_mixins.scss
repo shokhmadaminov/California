@@ -25,6 +25,6 @@
         @media only screen and (max-width: 993px) { @content }
     };
     @if($breakpoint == desktop) {
-        @media only screen and (max-width: 1210px) { @content }
+        @media only screen and (max-width: 1200px) { @content }
     };
 }

@@ -43,6 +43,11 @@ body {
   font-style: normal;
   font-display: swap;
 }
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
 .nav__list {
   list-style: none;
   display: flex;
@@ -89,7 +94,7 @@ body {
   gap: 2rem;
 }
 
-.cart-btn, .search-btn {
+.burger, .cart-btn, .search-btn {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -107,4 +112,17 @@ body {
   height: 24px;
   -o-object-fit: contain;
      object-fit: contain;
+}
+
+.burger {
+  display: none;
+}
+@media only screen and (max-width: 768px) {
+  .burger {
+    display: block;
+  }
+}
+.burger img {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=main.css.map */
