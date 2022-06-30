@@ -1,0 +1,75 @@
+.hero {
+    @include container;
+    padding: 0 0 0 5.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $section-bg-color;
+    border-radius: 3.2rem;
+    position: relative;
+    @include responsive(big-tables) {
+        padding: 1rem 0 0 3.4rem ;
+    }
+    @include responsive(tables) {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 0;
+        padding-bottom: 4rem;
+    }
+    &__content {
+        width: 100%;
+        max-width: 588px;
+        @include responsive(middle-table) {
+            padding-bottom: 1rem;
+        }
+    }
+    &__title {
+        font-family: $title-fonts;
+        font-weight: 400;
+        font-size: 5.8rem;
+        line-height: 1.2;
+        color: $black-color;
+        margin-top: 0;
+        margin-bottom: 2rem;
+        @include responsive(big-tables) {
+            font-size: 4.5rem;
+        }
+    }
+    &__text {
+        width: 100%;
+        max-width: 565px;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 3rem;
+        @include responsive(tables) {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 1rem;
+        }
+    }
+    &__hr-wrapper {
+        width: 50%;
+        position: absolute; 
+        bottom: 34px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        align-items:center;
+        justify-content: space-between;
+    }
+    &__hr {
+        width: 30%;
+        height: 2px;
+        background-color: $black-color;
+        border: none;
+        display: block;
+    }
+    &__img {
+        width: 50%;
+        height: auto;
+        object-fit: contain;
+        @include responsive(phone) {
+            width: 65%;
+        }
+    }
+}

@@ -16,6 +16,16 @@ html {
   scroll-behavior: smooth;
   font-size: 62.5%;
 }
+@media only screen and (max-width: 885px) {
+  html {
+    font-size: 58%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  html {
+    font-size: 52%;
+  }
+}
 
 body {
   height: 100%;
@@ -25,8 +35,12 @@ body {
   font-family: "Inter", "Arial", sans-serif;
   color: #222;
   font-size: 1.4rem;
-  line-height: 1.14;
+  line-height: 1.2;
   background-color: #fff;
+}
+
+.main {
+  flex-grow: 1;
 }
 
 @font-face {
@@ -66,6 +80,7 @@ body {
 
 .header {
   padding: 3rem 0;
+  margin-bottom: 2.8rem;
 }
 .header__inner {
   width: 100%;
@@ -92,6 +107,100 @@ body {
   display: flex;
   align-items: center;
   gap: 2rem;
+}
+
+.hero {
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 0 0 5.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #dce5e2;
+  border-radius: 3.2rem;
+  position: relative;
+}
+@media only screen and (max-width: 993px) {
+  .hero {
+    padding: 1rem 0 0 3.4rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 4rem;
+  }
+}
+.hero__content {
+  width: 100%;
+  max-width: 588px;
+}
+@media only screen and (max-width: 885px) {
+  .hero__content {
+    padding-bottom: 1rem;
+  }
+}
+.hero__title {
+  font-family: "Readex Pro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 5.8rem;
+  line-height: 1.2;
+  color: #000;
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+@media only screen and (max-width: 993px) {
+  .hero__title {
+    font-size: 4.5rem;
+  }
+}
+.hero__text {
+  width: 100%;
+  max-width: 565px;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 768px) {
+  .hero__text {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+  }
+}
+.hero__hr-wrapper {
+  width: 50%;
+  position: absolute;
+  bottom: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__hr {
+  width: 30%;
+  height: 2px;
+  background-color: #000;
+  border: none;
+  display: block;
+}
+.hero__img {
+  width: 50%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+@media only screen and (max-width: 576px) {
+  .hero__img {
+    width: 65%;
+  }
 }
 
 .burger, .cart-btn, .search-btn {
@@ -125,4 +234,22 @@ body {
 .burger img {
   width: 30px;
   height: 30px;
+}
+
+.hero__btn:hover {
+  background-color: #3a7f9b;
+  border-color: #3a7f9b;
+  color: #fff;
+}
+
+.hero__btn {
+  padding: 1.4rem 5.3rem;
+  border: 1px #000 solid;
+  border-radius: 20rem;
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+}
+.hero__btn:active {
+  opacity: 0.6;
 }/*# sourceMappingURL=main.css.map */

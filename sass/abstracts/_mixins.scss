@@ -7,6 +7,15 @@
     margin-right: auto;
 }
 
+@mixin site-button($padding) {
+    padding: $padding;
+    border: 1px $black-color solid;
+    border-radius: 20rem;
+    color: $black-color ;
+    text-decoration: none;
+    display: inline-block;
+}
+
 
 @mixin responsive($breakpoint) {
     @if($breakpoint == m-phone) {
