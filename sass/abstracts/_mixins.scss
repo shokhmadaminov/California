@@ -16,6 +16,27 @@
     display: inline-block;
 }
 
+@mixin  main-titles {
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+    margin-bottom: 0.9rem;
+}
+
+@mixin  main-subtitles {
+    width: 100%;
+    max-width: 628px;
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    text-align: center;
+    color: $black-color;
+}
+
 
 @mixin responsive($breakpoint) {
     @if($breakpoint == m-phone) {

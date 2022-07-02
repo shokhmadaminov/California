@@ -7,6 +7,7 @@
     background-color: $section-bg-color;
     border-radius: 3.2rem;
     position: relative;
+    margin-bottom: 2.8rem;
     @include responsive(big-tables) {
         padding: 1rem 0 0 3.4rem ;
     }
