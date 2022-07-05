@@ -48,3 +48,6 @@
         opacity: 0.6;
     }
 }
+.best__item-btn:hover {
+    @extend %hover-btn;
+}
