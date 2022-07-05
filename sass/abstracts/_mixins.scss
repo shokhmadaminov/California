@@ -37,6 +37,14 @@
     color: $black-color;
 }
 
+@mixin list-title {
+    font-family: $title-fonts;
+    font-weight: 400;
+    font-size: 2.2rem;
+    line-height: 1.25;
+    color: $black-color;
+}
+
 
 @mixin responsive($breakpoint) {
     @if($breakpoint == m-phone) {

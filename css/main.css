@@ -307,6 +307,127 @@ body {
   }
 }
 
+.sales {
+  padding: 7.2rem 0 2.8rem;
+}
+.sales__inner {
+  width: 100%;
+  max-width: 1340px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sales__title {
+  font-family: "Readex Pro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+  margin-bottom: 0.9rem;
+}
+.sales__subtitle {
+  width: 100%;
+  max-width: 628px;
+  font-family: "Readex Pro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #000;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.2rem;
+}
+.sales__list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2.8rem;
+}
+@media only screen and (max-width: 1200px) {
+  .sales__list {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  }
+}
+@media only screen and (max-width: 993px) {
+  .sales__list {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  }
+}
+@media only screen and (max-width: 768px) {
+  .sales__list {
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sales__list {
+    row-gap: 5rem;
+  }
+}
+.sales__item {
+  padding-top: 2.8rem;
+  display: flex;
+  flex-direction: column;
+}
+@media only screen and (max-width: 1200px) {
+  .sales__item {
+    align-items: center;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sales__item {
+    box-shadow: 0 0 10px #c9c9c9;
+    padding-bottom: 2rem;
+  }
+}
+.sales__item-frame {
+  width: 247px;
+  height: 214px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3.3rem;
+  overflow: hidden;
+}
+@media only screen and (max-width: 576px) {
+  .sales__item-frame {
+    margin-bottom: 1rem;
+  }
+}
+.sales__item-img {
+  width: 247px;
+  height: 214px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: transform 0.4s ease;
+}
+.sales__item-img:hover {
+  transform: scale(1.2);
+}
+.sales__item-title {
+  font-family: "Readex Pro", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 1.25;
+  color: #000;
+  margin-bottom: 0.9rem;
+}
+.sales__item-text {
+  width: 100%;
+  max-width: 261px;
+  margin-bottom: 0.8rem;
+  color: #4b4b4b;
+}
+.sales__item-price {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.16;
+  color: #000;
+  margin-top: auto;
+}
+
 .hero {
   width: 100%;
   max-width: 1340px;
