@@ -51,3 +51,13 @@
 .best__item-btn:hover {
     @extend %hover-btn;
 }
+
+
+// REGISTE BTN
+.register__btn {
+    border-radius: 0 5.4rem 5.4rem 0;
+    background-color: $black-color;
+    padding: 1.5rem 3.2rem;
+    color: $white-color;
+    font-size: 1.4rem;
+}
