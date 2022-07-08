@@ -9,14 +9,39 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 6.3rem;
+        @include responsive(big-tables) {
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        @include responsive(tables) {
+            gap: 4rem;
+        }
+        @include responsive(m-phone) {
+            justify-content: center;
+            text-align: center;
+        }
     }
     &__top-text-wrapper {
         width: 100%;
-        max-width: 394px;
+        max-width: 409px;
+        @include responsive(desktop) {
+            padding-right: 5rem;
+        }
+        @include responsive(tables) {
+            width: 100%;
+            max-width: 1000px;
+            margin-bottom: 4rem;
+        }
+        @include responsive(m-phone) {
+            padding-right: 0;
+        }
     }
     &__logo {
         display: flex;
         margin-bottom: 1.8rem;
+        @include responsive(m-phone) {
+            justify-content: center;
+        }
     }
     &__logo-img {
         width: 181px;
@@ -26,6 +51,10 @@
     &__top-text {
         width: 100%;
         max-width: 304px;
+        @include responsive(m-phone) {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
     &__top-list {
         width: 100%;
@@ -33,6 +62,12 @@
         list-style: none;
         display: flex;
         flex-direction: column;
+        &:last-child {
+            margin-right: auto;
+            @include responsive(tables) {
+                margin-right: 0;
+            }
+        }
     }
     &__top-title {
         font-family: $title-fonts;
@@ -67,6 +102,12 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        @include responsive(m-phone) {
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 1rem;
+            padding-bottom: 2rem;
+        }
     }
     &__bottom-text-wrapper {
         display: flex;
